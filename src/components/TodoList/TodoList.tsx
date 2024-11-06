@@ -64,12 +64,14 @@ export const TodoList: React.FC<Props> = ({
                 type="button"
               >
                 <span className="icon">
-                  className=
-                  {cn('far', {
-                    'fa-eye': !selectEye || selectEye.id !== todo.id,
-                    'fa-eye-slash': selectEye && selectEye.id === todo.id,
-                  })}
-                </span>
+                    <i
+                      className={cn('far', {
+                        'fa-eye': !selectEye || selectEye.id !== todo.id,
+                        'fa-eye-slash':
+                        selectEye && selectEye.id === todo.id,
+                      })}
+                    />
+                  </span>
               </button>
             </td>
           </tr>
